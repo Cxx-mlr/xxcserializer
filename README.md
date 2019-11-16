@@ -5,7 +5,7 @@ xxcserializer is a tiny Serializer / Deserializer library for C++17
 //
 
 ```cpp
-#include <xxcser/forward_list.hpp>
+#include <xxcser/arithmetic.hpp>
 
 struct Person {
   std::string name;
@@ -25,7 +25,7 @@ int main() {
 //
 
 ```cpp
-#include <xxcser/forward_list.hpp>
+#include <xxcser/arithmetic.hpp>
 
 class Person {
 private:
