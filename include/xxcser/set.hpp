@@ -9,7 +9,7 @@ namespace io {
 	auto write(const std::set <t>& set) -> decltype(io::write(*set.begin())) {
 		io::write(set.size());
 
-		for (auto it : set) {
+		for (auto& it : set) {
 			io::write(it);
 		}
 	}
