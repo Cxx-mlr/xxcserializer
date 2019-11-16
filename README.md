@@ -25,6 +25,7 @@ int main() {
 //
 
 ```cpp
+#include <iostream>
 #include <xxcser/string.hpp>
 
 class Person {
