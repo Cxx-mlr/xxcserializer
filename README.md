@@ -19,7 +19,7 @@ int main() {
   io::write_object("path", person);
   io::read_object("path", dest);
   
-  std::cout << dest.name << " is " << dest.age << " years old.\n";
+  std::cout << dest.name << " is " << dest.age << " years old.\n"; // xXC is 18 years old
 }
 ```
 
@@ -51,7 +51,7 @@ int main() {
   io::write_object("path", person);
   io::read_object("path", dest);
   
-  std::cout << dest;
+  std::cout << dest; // xXC is 18 years old
 }
 ```
 
@@ -91,14 +91,16 @@ class Person : Name, Age {
 		Person() {}
     
     inline friend std::ostream& operator<< (std::ostream& out, const Person& person) {
-      // ...
+      return out << person.name << " is " << person.age << " years old.\n";
     }
 };
 
 int main() {
-	Person person("xXC", 18), dest;
+  Person person("xXC", 18), dest;
   
   io::write_object("path", person);
   io::write_object("path", dest);
+  
+  std::cout << dest; // xXC is 18 years old
 }
 ```
