@@ -19,7 +19,7 @@ int main() {
     io::write_object("path", person);
     io::read_object("path", dest);
   
-    std::cout << dest.name << " is " << dest.age << " years old.\n"; // xXC is 18 years old
+    std::cout << dest.name << " is " << dest.age << " years old.\n"; // Cxx is 18 years old
 }
 ```
 
@@ -46,7 +46,7 @@ public:
 };
 
 int main() {
-    Person person("Cxx", 18), dest;
+    Person person("xXC", 18), dest;
   
     io::write_object("path", person);
     io::read_object("path", dest);
@@ -96,11 +96,11 @@ class Person : Name, Age {
 };
 
 int main() {
-    Person person("xXC", 18), dest;
+    Person person("Cxx", 18), dest;
   
     io::write_object("path", person);
     io::write_object("path", dest);
   
-    std::cout << dest; // xXC is 18 years old
+    std::cout << dest; // Cxx is 18 years old
 }
 ```
