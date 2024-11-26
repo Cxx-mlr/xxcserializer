@@ -1,6 +1,6 @@
 # xxcserializer
 
-xxcserializer is a tiny Serializer / Deserializer library for C++17
+xxcserializer is a straightforward serializer/deserializer library for C++17, designed for ease of use and flexibility in handling object serialization.
 
 ## Usage
 
