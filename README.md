@@ -2,7 +2,9 @@
 
 xxcserializer is a tiny Serializer / Deserializer library for C++17
 
-//
+## Usage
+
+### Basic Example
 
 ```cpp
 #include <iostream>
@@ -23,7 +25,7 @@ int main() {
 }
 ```
 
-//
+### Serialization with Custom Classes
 
 ```cpp
 #include <iostream>
@@ -55,7 +57,7 @@ int main() {
 }
 ```
 
-//
+### Advanced Example: Inheritance
 
 ```cpp
 #include <iostream>
